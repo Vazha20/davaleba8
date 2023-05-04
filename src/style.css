@@ -1,39 +1,71 @@
-.bike{
-    position: relative;
-    width: 25%;
-    animation: bicycleMove 4s infinite linear; 
-}
-img{
+#bodyColor {
+    background: #a1d6ff;
     width: 100%;
 }
-.wheel{
+body {
+    overflow: hidden;
+}
+.bike {
+    position: relative;
+    width: 25%;
+    top: 200px;
+    animation: bicycleMove 8s infinite linear;
+}
+img {
+    width: 100%;
+}
+.wheel {
     position: absolute;
     width: 200px;
     animation: wheel 4s infinite linear;
 }
-.wheel:nth-child(2){
+.wheel:nth-child(2) {
     top: 90px;
     left: -75px
 }
-.wheel:nth-child(3){
+.wheel:nth-child(3) {
     top: 90px;
     left: 208px
 }
-
-
-@keyframes wheel{
+@keyframes wheel {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
-@keyframes bicycleMove{
+@keyframes bicycleMove {
     from {
-        left: 0vw;
+        left: -20vw;
     }
     to {
-        left: 100vw;
-    }   
+        left: 160vw;
+    }
+}
+.happyBday {
+    position: absolute;
+    left: -760px;
+    top: 100px
+}
+.happyBdayLine {
+    position: absolute;
+    left: -260px;
+    top: 40px
+}
+.cloudOne {
+    position: absolute;
+    width: 33%;
+    right: 400px;
+    top: -60px
+}
+.cloudTwo {
+    width: 33%;
+}
+.cloudThree {
+    position: absolute;
+    width: 33%;
+    right: 200px;
+    top: 420px
 }
