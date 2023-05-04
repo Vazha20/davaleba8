@@ -1,8 +1,7 @@
 .bike{
     position: relative;
     width: 25%;
-    left: 25vh;
-
+    animation: bicycleMove 4s infinite linear; 
 }
 img{
     width: 100%;
@@ -10,8 +9,31 @@ img{
 .wheel{
     position: absolute;
     width: 200px;
+    animation: wheel 4s infinite linear;
 }
 .wheel:nth-child(2){
-    top:-80px;
-    left: -100px
+    top: 90px;
+    left: -75px
+}
+.wheel:nth-child(3){
+    top: 90px;
+    left: 208px
+}
+
+
+@keyframes wheel{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes bicycleMove{
+    from {
+        left: 0vw;
+    }
+    to {
+        left: 100vw;
+    }   
 }
