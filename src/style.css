@@ -58,14 +58,29 @@ img {
     position: absolute;
     width: 33%;
     right: 400px;
-    top: -60px
+    top: -60px;
+    animation: cloudOne 8s infinite linear;
 }
 .cloudTwo {
-    width: 33%;
-}
-.cloudThree {
     position: absolute;
     width: 33%;
     right: 200px;
-    top: 420px
+    top: 420px;
+    animation: cloudOne 8s infinite linear;
+}
+@keyframes cloudOne {
+    from {
+        left: 160vw;
+    }
+    to {
+        left: -40vw;
+    }
+}
+@keyframes cloudTwo {
+    from {
+        left: 160vw;
+    }
+    to {
+        left: -40vw;
+    }
 }
